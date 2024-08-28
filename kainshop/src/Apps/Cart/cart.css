@@ -1,0 +1,112 @@
+
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: blueviolet;
+    font-size: 20px;
+}
+.cart-items-item{
+    color: black;
+    margin: 10px 0px;
+}
+.cart-items-item img{
+    width: 120px;
+}
+.cart hr{
+    height: 1px;
+    
+    background-color: #e2e2e2;
+}
+/* css xóa từng item */
+.DeleteItem{
+    color: red;
+    cursor: pointer;
+}
+.quality{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.quality button{
+    background-color: #007bff; /* Màu nền cho nút */
+    color: white; /* Màu chữ cho nút */
+    border: none; /* Loại bỏ đường viền mặc định */
+    padding: 5px 10px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo góc nút */
+    cursor: pointer; /* Con trỏ thành dạng bàn tay khi hover */
+    transition: background-color 0.3s ease;
+}
+.quality button:hover{
+    background-color: #0056b3; 
+}
+.quality input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
+    padding: 5px; 
+    outline: none;
+}
+/* css cho tổng tiền */
+.total{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.total span{
+    font-size: 24px;
+    color: red;
+}
+ /* css cho xóa tất cả sản phẩm */
+ .delete {
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 30px;
+ }
+ .deleteAll{ 
+        background-color: #dc3545; 
+        color: white; 
+        border: none;
+        padding: 8px 16px; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 16px; 
+        transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+ }
+.deleteAll:hover {
+    background-color: #c82333; /* Thay đổi màu nền khi hover */
+}
+
+.deleteAll:active {
+    background-color: #bd2130; /* Màu nền khi nhấn */
+}
+
+.deleteAll:focus {
+    outline: none; /* Loại bỏ viền mặc định khi focus */
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5); /* Hiệu ứng viền khi focus */
+}
+
+/* css cho thông báo đơn hàng trống */
+.empty-cart {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa; 
+    border-radius: 5px; 
+    color: #6c757d; 
+    font-size: 16px; 
+}
+
+.empty-cart p {
+    margin: 0 0 10px; 
+}
+
+.empty-cart a {
+    color: #007bff; 
+    font-weight: bold; 
+}
+
+.empty-cart a:hover {
+    text-decoration: underline; /* Gạch chân liên kết khi hover */
+}

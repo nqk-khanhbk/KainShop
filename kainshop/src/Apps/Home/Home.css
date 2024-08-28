@@ -1,0 +1,54 @@
+.header{
+    margin-bottom: 40px;
+}
+.title{
+    margin-bottom: 40px;
+}
+.title h2{
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: orange;
+}
+.title .line{
+    width: 150px;
+    height: 4px;
+    background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+    width: 100vw;
+}
+.paner{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 19px;
+    color: #fff;
+    cursor: pointer;
+    flex: 1;
+    margin: 10px;
+    position: relative;
+    transition: flex 1s;
+}
+.paner h3{
+    position: absolute;
+    font-size: 24px;
+    margin: 0;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: opacity 1s 1s;
+    background: rgba(0, 0, 0, 0.432);
+    padding: 2px 20px;
+    border-radius: 15px;
+}
+.paner.active{
+    flex: 10;
+}
+.paner.active h3{
+    opacity:1;
+}

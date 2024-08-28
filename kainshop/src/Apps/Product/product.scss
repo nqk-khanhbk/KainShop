@@ -1,0 +1,118 @@
+.product{
+    
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-left: 24px;
+    }
+    &__item{
+        width:calc(100% / 4 - 20px);
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+    
+    }
+    &__image{
+        width: 100%;
+        aspect-ratio: 4/3;
+        border-radius: 10px;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &-discount{
+            position: absolute;
+            top:0;
+            right: 0;
+            background: orange;
+            color: white;
+            font-size: 20px;
+            width: 60px;
+            text-align: center;
+        }
+    }
+    &__title{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+    }
+    &__price{
+        &-new{
+            color: red;
+        }
+        &-old{
+            text-decoration: line-through;
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content:flex-end ;
+        gap: 10px;                 
+        padding: 10px;
+
+        &-icons{
+            
+            font-size: 20px;
+            background-color:#45a04975;
+            border: none;              
+            color: white;             
+            padding: 10px 15px;        
+            text-align: center;       
+            text-decoration: none;     
+            display: inline-flex;      /* Hiển thị nút là flex container */
+            align-items: center;       /* Căn giữa nội dung theo chiều dọc */
+            justify-content: center;   /* Căn giữa nội dung theo chiều ngang */
+            border-radius: 5px;        
+            cursor: pointer;           
+            transition: background-color 0.3s;
+            
+            &:hover{
+                background-color: #45a049;
+            }
+        }
+    }
+}
+.pagination{
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  
+    &__item{
+        margin: 0 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+
+        &.active{
+            background-color: #007bff; 
+            color: #fff; 
+            pointer-events: none;
+        }
+        &:hover{
+            background-color: #007bff; 
+            color: #fff; 
+        }
+        &:focus{
+            outline: none; /* Loại bỏ viền mặc định khi tập trung */
+            box-shadow: 0 0 0 2px #007bff;
+        }
+        &.disabled{
+            opacity: 0.6; /* Giảm độ trong suốt cho các nút bị vô hiệu hóa */
+            cursor: not-allowed;
+        }
+    }
+}

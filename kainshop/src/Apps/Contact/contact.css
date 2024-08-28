@@ -1,0 +1,80 @@
+.contact {
+    padding: 20px;
+    background-color: #f8f9fa; /* Màu nền nhẹ cho phần liên hệ */
+}
+
+.container-contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Khoảng cách giữa Address và Contact */
+    flex-wrap: wrap; 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.address h2{
+    font-size: 24px;
+    color: #C2000C;
+    margin-bottom: 15px;
+}
+.address p {
+    font-size: 16px;
+    color: #000; /* Màu chữ cho nội dung */
+    margin: 10px 0; /* Tăng khoảng cách giữa các đoạn văn */
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+}
+.address, .contact-min {
+    max-width: 50%; /* Chia đều 50% cho Address và Contact */
+    flex: 1;
+}
+.contact-min h2{
+    font-size: 24px;
+    color: #C2000C;
+    margin-bottom: 15px;
+}
+.contact-min form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Khoảng cách giữa các phần trong form */
+}
+.contact-one {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Khoảng cách giữa Họ và tên và Số điện thoại */
+}
+
+.contact-name, .contact-tel {
+    flex: 1;
+    max-width: 50%; /* Mỗi trường chiếm tối đa 50% chiều rộng */
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+    min-height: 100px; /* Chiều cao tối thiểu cho textarea */
+}
+.button-contact{
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start; /* Căn nút về phía bên trái */
+}
+
+.button-contact:hover {
+    background-color: #c82333; /* Màu khi hover */
+}

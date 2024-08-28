@@ -1,0 +1,55 @@
+
+  .product-form table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-form td {
+    padding: 5px;
+    vertical-align: top;
+  }
+  
+  .product-form input[type="text"], 
+  .product-form select, 
+  .product-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .product-form input[type="text"]:focus,
+  .product-form select:focus,
+  .product-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .product-form button, 
+  .product-form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .product-form .btn-submit {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .product-form .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .product-form .btn-cancel {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .product-form .btn-cancel:hover {
+    background-color: #999;
+  }
