@@ -1,3 +1,1 @@
-##KainShop
----
-##Cách cài đặt
+
