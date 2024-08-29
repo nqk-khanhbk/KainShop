@@ -12,13 +12,15 @@ function HeaderTwo (){
         {/* Header */}
         <div className="header">
             <div className="title">
-                <h2>Sản phẩm bán chạy nhất</h2>
+                <h2>Sản phẩm của chúng tôi</h2>
                 <div className="line"></div>
             </div>
             <div className="container">
                 {Header.map ((item,index) =>(
                     <div onClick={() => handleClick(index)} className={`paner ${activeIndex === index ? 'active' : ''}`} key={index} style = {{backgroundImage:`url(${item.header_image})`}} >
-                        <h3>{item.header_name}</h3>
+                            <h3>{item.header_name}</h3>
+                            <button>Buy Now</button>
+          
                     </div>
                     
                 ))}

@@ -8,6 +8,11 @@ import rating_starts from "./rating_starts.png";
 import watch1 from "./watch1.png"
 import watch2 from "./watch2.png"
 import watch3 from "./watch3.png"
+import three1 from "./three1.png"
+import three2 from "./three2.png"
+import three3 from "./three3.png"
+import three4 from "./three4.png"
+import three5 from "./three5.png"
 export const assets = {
     KainShopp,
     rating_starts
@@ -43,23 +48,70 @@ export const ImageList = [
 ];
 export const Header = [
     {
-        header_name:"Anh1",
+        header_title:"NOW AVAILABLE",
+        header_name:"Iphone 14 Pro",
         header_image:header1
     },
     {
-        header_name:"Anh2",
+        header_title:"ORIGINAL AND REFINED STYLE",
+        header_name:"Bands for Apple Watch 8",
         header_image:header2
     },
     {
-        header_name:"Anh3",
+        header_title:"ORIGINAL AND REFINED STYLE",
+        header_name:"Ellite ProBook",
         header_image:header3
     },
     {
-        header_name:"Anh4",
+        header_title:"ORIGINAL AND REFINED STYLE",
+        header_name:"Full frame in a convenient case",
         header_image:header4
     },
     {
-        header_name:"Anh5",
+        header_title:"ORIGINAL AND REFINED STYLE",
+        header_name:"Fell the colors as they really are",
         header_image:header5
     }
-]
+];
+export const Headerthree = [
+    {
+      id: 1,
+      img: three1,
+      title: "Women Ethnic",
+      rating: 5.0,
+      color: "white",
+      aosDelay: "0",
+    },
+    {
+      id: 2,
+      img: three2,
+      title: "Women western",
+      rating: 4.5,
+      color: "Red",
+      aosDelay: "200",
+    },
+    {
+      id: 3,
+      img: three3,
+      title: "Goggles",
+      rating: 4.7,
+      color: "brown",
+      aosDelay: "400",
+    },
+    {
+      id: 4,
+      img: three4,
+      title: "Printed T-Shirt",
+      rating: 4.4,
+      color: "Yellow",
+      aosDelay: "600",
+    },
+    {
+      id: 5,
+      img: three5,
+      title: "Fashin T-Shirt",
+      rating: 4.5,
+      color: "Pink",
+      aosDelay: "800",
+    },
+  ];

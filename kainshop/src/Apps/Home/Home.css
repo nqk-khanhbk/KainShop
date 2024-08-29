@@ -125,7 +125,7 @@
 }
 .title h2{
     padding-top: 40px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     text-align: center;
     color: orange;
@@ -139,6 +139,7 @@
 .container{
     display: flex;
     width: 100vw;
+    
 }
 .paner{
     height: 80vh;
@@ -151,23 +152,96 @@
     flex: 1;
     margin: 10px;
     position: relative;
-    transition: flex 1s;
+    transition: flex 1s;  
+}
+.header__two-content{
+  position: absolute;
+  bottom:100px;
+  left: 50px;
+  opacity: 0;
+  transform: opacity 1s 1s;
+  
+}
+.paner.active .header__two-content{
+  opacity: 1;
+}
+.paner.active{
+  flex: 10;
 }
 .paner h3{
     position: absolute;
-    font-size: 24px;
+    font-size: 36px;
     margin: 0;
-    bottom: 20px;
+    bottom: 120px;
     left: 50px;
     opacity: 0;
     transition: opacity 1s 1s;
-    background: rgba(0, 0, 0, 0.432);
+    /* background: rgba(0, 0, 0, 0.432);
     padding: 2px 20px;
-    border-radius: 15px;
+    border-radius: 15px; */
 }
-.paner.active{
-    flex: 10;
+.paner button{
+  position: absolute;
+  background-color: #ffa94d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  bottom: 60px;
+  left: 50px;
+  opacity: 0;
+  transition: opacity 1s 1s;
 }
+.paner button:hover{
+  background-color: #ff922b;
+}
+.paner.active button{
+  opacity:1;
+}
+
 .paner.active h3{
     opacity:1;
 }
+/* end section-two */
+
+/* section-three */
+.headerThree{
+  background-color: #F8F4F0;
+  margin-bottom: 60px;
+}
+.content-list{
+  display: flex;
+  width: calc(100 % /3 - 10px);
+  
+}
+.content-item{
+  margin-left: 10px;
+  border:1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  aspect-ratio: 4/3;
+
+}
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s;
+  border-radius: 8px;
+}
+.image img:hover{
+  transform: scale(1.1);
+}
+.name{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* end section-three */
