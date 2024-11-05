@@ -259,5 +259,35 @@
       "stock": "1",
       "image": "https://www.superplanshet.ru/images/iPhone_15_77488544.jpg"
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Nguyen Quoc Khanh",
+      "email": "khanh@gmail.com",
+      "password": "khanhdz",
+      "token": "hdhdjkwjjhdhd"
+    },
+    {
+      "id": "2",
+      "fullName": "Quoc Khanh",
+      "email": "khanh1@gmail.com",
+      "password": "khanhdz1",
+      "token": "hdhdsssjkwjjhdhd"
+    },
+    {
+      "id": "533c",
+      "fullName": "khanh",
+      "email": "khanh12@gmail.com",
+      "password": "123",
+      "token": "NSDaMNzTdyODuXgkGw4m"
+    },
+    {
+      "id": "48cd",
+      "fullName": "khanh",
+      "email": "user@gmail.com",
+      "password": "1223333",
+      "token": "nftWZJzIaKfbvLxLrgVF"
+    }
   ]
 }

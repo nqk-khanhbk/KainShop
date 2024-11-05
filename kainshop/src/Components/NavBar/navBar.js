@@ -5,11 +5,19 @@ import "./navBar.scss";
 import { NavLink } from "react-router-dom";
 import Search from "./search";
 import { useSelector } from "react-redux";
+import { getCookie } from "../../helpers/cookies";
+import Users from "./user";
+
 function NavBar (){
     const cart = useSelector(state => state.CartReduce);
     const total = cart.reduce((sum,item)=>{
         return sum + item.quality;
     },0);
+
+    const token = getCookie("token");
+    const isLogin = useSelector(states=>states.loginReducer);
+    console.log(isLogin);
+    console.log(token);
     return (
         <>
         <div className="nav">
@@ -24,24 +32,34 @@ function NavBar (){
                         <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="product">Product</NavLink>
+                        <NavLink to="/product">Product</NavLink>
                     </li>
                     <li>
-                        <NavLink to="blog">Blog</NavLink>
+                        <NavLink to="/blog">Blog</NavLink>
                     </li>
                     <li>
-                        <NavLink to="contact">Contact</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                     </li>             
             </ul>
             <div className="right">
                 <Search />
                 <div className="cart">
-                    <NavLink to="cart" className="cart__icon"> 
+                    <NavLink to="/cart" className="cart__icon"> 
                          <FaCartPlus />
                          <div className="cart__icon-total">{total}</div>
                     </NavLink>     
                 </div>
-                <Login />
+
+                {token ? (
+                    <div>
+                       <Users />
+                    </div>
+                ):(
+                    <>
+                    <Login />
+                    </>
+                )}
+              
             </div>
             
         </div>

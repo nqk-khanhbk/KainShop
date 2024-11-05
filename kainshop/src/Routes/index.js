@@ -5,6 +5,9 @@ import Contact from "../Apps/Contact";
 import Product from "../Apps/Product";
 import Login from "../Apps/Login";
 import Cart from "../Apps/Cart";
+import PrivateRoutes from "../Components/privateRoutes";
+import Users from "../Apps/users";
+import Logout from "../Apps/logout";
 export const Routes = [
     {
         path: "/",
@@ -16,24 +19,37 @@ export const Routes = [
               
             },
             {
-                path:"blog",
+                path:"/blog",
                 element:<Blog />
             },
             {
-                path:"contact",
+                path:"/contact",
                 element:<Contact />
             },
             {
-                path:"product",
+                path:"/product",
                 element:<Product />
             },
             {
-                path:"cart",
+                path:"/cart",
                 element:<Cart />
             },
             {
-                path:"login",
+                path:"/login",
                 element:<Login />
+            },
+            {
+                element:<PrivateRoutes />,
+                children :[
+                    {
+                        path:"/users",
+                        element:<Users />
+                    },
+                    {
+                        path:"/logout",
+                        element:<Logout />
+                    }
+                ]
             }
         ]
     }

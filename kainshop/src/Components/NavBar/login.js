@@ -27,7 +27,7 @@ function Login (){
         <>
         <div className="login">
               <button className="button__login" onClick={handleClick} ref={buttonRef}>
-                <NavLink to="login">Login</NavLink>               
+                <NavLink to="/login">Login</NavLink>               
               </button>
                  
         </div>
