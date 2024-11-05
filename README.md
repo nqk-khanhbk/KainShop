@@ -42,6 +42,6 @@ npm start
 - Tự động cập nhật tổng số tiền đã mua hàng
 ### 3.6.Đăng nhập,đăng xuất
 - Khi chưa có tài khoản thì có chức năng tạo tài khoản
-- Chức năng đăng nhập
+- Chức năng đăng nhập(xác thực bằng Token)
 ## 4.Video demo sản phẩm
 [https://www.youtube.com/watch?v=YGkDhi7JMrU](https://www.youtube.com/watch?v=YGkDhi7JMrU)
